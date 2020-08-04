@@ -48,6 +48,38 @@ sudo arp-scan 192.168.1.0/24
 ```cmd
 ssh pi@192.168.3.11
 ```
-default username: pi
-default password: raspberry
+default username: `pi`
+default password: `raspberry`
+
+
+### Install VNC server inside pi
+
+- Download and install vnc server
+
+```cmd
+sudo apt-get update
+
+sudo apt-get install tightvncserver
+
+```
+- Set one time password for the VNC Server
+```cmd
+tightvncserver
+```
+
+- Set the `VNC` resolution
+
+```cmd
+vncserver :1 geometry 1024x768
+
+``` 
+
+### Connect the vnc from another device
+
+- Enter the ip address in the following format
+
+```cmd
+  192.168.1.11:<Display No>
+```
+
 
