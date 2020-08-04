@@ -79,7 +79,8 @@ vncserver :1 geometry 1024x768
 - Enter the ip address in the following format
 
 ```cmd
-  192.168.1.11:<Display No>
+  sudo apt install tigervnc-viewer
+  vncviewer <ip>:<display/port>
 ```
 
 
