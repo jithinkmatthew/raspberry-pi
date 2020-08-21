@@ -84,7 +84,7 @@ vncserver :1 geometry 1024x768
 ```
 Example
 ```cmd
-192.168.0.8:2
+vncviewer 192.168.0.8:2
 ```
 
 
